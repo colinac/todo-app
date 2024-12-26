@@ -19,7 +19,7 @@
 body {
   color: rgb(var(--foreground-rgb));
   background-color: rgb(211, 211, 211);
-  background-image: url("/background.jpg");
+  background-image: url("../../public/background.jpg");
   background-size: cover;
   background-position: center center;
 }
