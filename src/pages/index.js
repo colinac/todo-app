@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google'
 import TodoApp from './TodoApp.js'
+import Image from 'next/image'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,7 +23,16 @@ export default function Index() {
         <p className="mb-4 text-xl"><i>a simple todo app created with React and Next.js.</i></p>
       </div>
       <TodoApp initialTasks={initialTasks}/>
+      <div className="flex my-10">
+      <Image
+      src="../../github-mark.svg"
+      width={30}
+      height={30}
+      alt="github-mark"
+    /><p className="mx-2 font-semibold">Github: <a href="https://github.com/colinac" className="font-normal text-blue-700 ">github.com/colinac</a></p>
+        </div>
     </div>
+
   )
 }
 
