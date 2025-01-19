@@ -23,7 +23,9 @@ export default function Index() {
       </div>
       <TodoApp initialTasks={initialTasks} />
       <div className="flex my-10">
-        <p className="mx-2 font-semibold">Github: <a href="https://github.com/colinac" className="font-normal text-blue-700 ">github.com/colinac</a></p>
+        <p className="mx-2 font-semibold flex">
+          <img class="w-6" src="./github-mark.svg" alt="github mark"></img>
+          <a href="https://github.com/colinac" className="font-normal text-blue-700 mx-3">github.com/colinac</a></p>
       </div>
     </div>
 
