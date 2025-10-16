@@ -15,6 +15,7 @@ const initialTasks = [
   }
 ]
 
+
 export default function Index() {
   // State for position
 
