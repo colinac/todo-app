@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { PlusIcon } from "@heroicons/react/24/solid";
 
 export default function InputBar({ onAddTask }) {
@@ -10,14 +10,16 @@ export default function InputBar({ onAddTask }) {
   }
 
   return (
-    <div id="task-input-bar">
+    <div id="task-input-bar" className="flex items-center gap-2">
       <input
         id="task-input-bar-field"
         type="text"
         placeholder="Enter a task"
         value={text}
         onChange={e => setText(e.target.value)}
+        className="flex-1"
       />
+
       {(text === "")
         ? (
           <button className="button disabled-button" id="add-button" disabled>

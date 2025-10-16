@@ -34,7 +34,7 @@ export default function TodoApp({ initialTasks = [] }) {
 
     return (
         <div id="task-app" className="w-[300px] md:w-[350px] h-[500px]">
-            <InputBar onAddTask={addTask} />
+            <InputBar onAddTask={addTask}/>
             <TaskList
                 tasks={tasks}
                 onChangeTask={changeTask}
