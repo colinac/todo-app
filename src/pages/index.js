@@ -26,8 +26,8 @@ export default function Index() {
 
   useEffect(() => {
     // Center the widget on initial render
-    const centerX = document.documentElement.clientWidth / 2 - 200; // Adjust 200 to half widget width
-    const centerY = document.documentElement.clientHeight / 2 - 150;
+    const centerX = screen.width / 2 - 200; // Adjust 200 to half widget width
+    const centerY = screen.height / 2 - 200;
     setPosition({ x: centerX, y: centerY });
     setCentered(true);
   }, []);
